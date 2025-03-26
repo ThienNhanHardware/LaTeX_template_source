@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1742990693.97346 "main.aux" "main.bbl" "main" 1742990696.9721 0
+["bibtex main"] 1742991052.18526 "main.aux" "main.bbl" "main" 1742991055.39265 0
   "./bibliography.bib" 1742907174 639 25adcccecb29543a510aed3d5579e066 ""
   "C:/Users/nhano/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1742990695 4847 d1523b1305b7ef4ced5ffaad723ebcfe "pdflatex"
+  "main.aux" 1742991054 4847 d1523b1305b7ef4ced5ffaad723ebcfe "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1742990694.31414 "d:/Documents/LaTeX_template_source/main.tex" "main.pdf" "main" 1742990696.9729 0
+["pdflatex"] 1742991052.65122 "d:/Documents/LaTeX_template_source/main.tex" "main.pdf" "main" 1742991055.39344 0
   "C:/Users/nhano/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1742988057 88371 b965f57369ed322039596060d18f4416 ""
   "C:/Users/nhano/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1742899379 12036089 1e2ce7a7f8ea04c6e9385f5936576f2e ""
   "C:/Users/nhano/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -178,23 +178,23 @@
   "C:/Users/nhano/AppData/Local/Programs/MiKTeX/tex/latex/vntex/t5enc.dfu" 1368738347 13949 387dd4fa58aea5f873839c93430fffed ""
   "C:/Users/nhano/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/nhano/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "contents/cover.tex" 1742990687 1463 ed4a8a7fbc47fe3aa5d01f419675c033 ""
+  "contents/cover.tex" 1742990756 1463 ed4a8a7fbc47fe3aa5d01f419675c033 ""
   "contents/introduction.tex" 1742987153 290 908e7e40e7bbd2cf0e77e7ddf434862f ""
   "contents/sample_code.tex" 1742989436 1422 fc79618b496d8f51ec756b4d5368a026 ""
   "contents/sample_figure.tex" 1742988050 1040 d2c1b26b02f5d229f11e18c41a4142cb ""
   "contents/sample_main_content.tex" 1742987489 5572 600736647dc8af6440420505fa73b493 ""
   "contents/sample_table.tex" 1742988436 3011 92a22849621d9bd6b7f692e5e9128857 ""
-  "d:/Documents/LaTeX_template_source/main.tex" 1742990687 657 aa4dafd4a8951c1eac3a6e3947cc93e6 ""
+  "d:/Documents/LaTeX_template_source/main.tex" 1742991047 657 aa4dafd4a8951c1eac3a6e3947cc93e6 ""
   "figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png" 1742910992 60777 e0a8674c74a0b4679f6951b5c54e1576 ""
   "figures/logo/logo_white.png" 1742985021 17058 d2c49eb61f3122fd499562a01e8ccabf ""
-  "main.aux" 1742990695 4847 d1523b1305b7ef4ced5ffaad723ebcfe "pdflatex"
-  "main.bbl" 1742990694 496 acf5cde6c755e8dc14d190271b9c1b00 "bibtex main"
-  "main.lof" 1742990695 318 c37bb341efd77712278b53e6dd28740e "pdflatex"
-  "main.lot" 1742990695 215 9e04b9e09424d937507b0f77ec444def "pdflatex"
-  "main.out" 1742990695 1677 6ef035d9fb66cc037c06305f7e1d8ab4 "pdflatex"
-  "main.tex" 1742990687 657 aa4dafd4a8951c1eac3a6e3947cc93e6 ""
-  "main.toc" 1742990695 1142 bbb4275e8267e8199a0420270e5a1acc "pdflatex"
-  "styles/codespace.tex" 1742990662 3983 bfe92907f54416ff823927ed636772aa ""
+  "main.aux" 1742991054 4847 d1523b1305b7ef4ced5ffaad723ebcfe "pdflatex"
+  "main.bbl" 1742991052 496 acf5cde6c755e8dc14d190271b9c1b00 "bibtex main"
+  "main.lof" 1742991054 318 c37bb341efd77712278b53e6dd28740e "pdflatex"
+  "main.lot" 1742991054 215 9e04b9e09424d937507b0f77ec444def "pdflatex"
+  "main.out" 1742991054 1677 6ef035d9fb66cc037c06305f7e1d8ab4 "pdflatex"
+  "main.tex" 1742991047 657 aa4dafd4a8951c1eac3a6e3947cc93e6 ""
+  "main.toc" 1742991054 1142 bbb4275e8267e8199a0420270e5a1acc "pdflatex"
+  "styles/codespace.tex" 1742990756 3983 bfe92907f54416ff823927ed636772aa ""
   (generated)
   "main.aux"
   "main.lof"
