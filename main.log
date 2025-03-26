@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.25)  26 MAR 2025 19:07
-=======
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.25)  26 MAR 2025 19:10
->>>>>>> main
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.25)  26 MAR 2025 19:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -489,17 +485,28 @@ Package: babel 2025/03/10 v25.5 The multilingual framework for pdfLaTeX, LuaLaTe
 *
 (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: Hyphen rules for 'canadian' set to \l@english
-(babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language73). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language73). Reported on input line 108.
-)) (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-english.tex
-Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 11.
+) (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/babel-vietnamese\vietnamese.ldf
+Language: vietnamese 
+
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language 'Vietnamese' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=0 instead on input line 36.
+
+Package babel Info: Hyphen rules for 'vietnamese' set to \l@english
+(babel)             (\language0). Reported on input line 37.
+Package babel Info: Hyphen rules for 'vietnam' set to \l@english
+(babel)             (\language0). Reported on input line 38.
+Loading definitions for the Vietnamese font encoding (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5enc.def
+File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
+LaTeX Font Info:    Redeclaring font encoding T5 on input line 75.
+)
+Package babel Info: Making " an active character on input line 147.
+)) (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/vi\babel-vietnamese.tex
+Package babel Info: Importing font and identification data for vietnamese
+(babel)             from babel-vi.ini. Reported on input line 11.
 ) (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
@@ -823,7 +830,10 @@ Package background Warning: erroneous input ignored on input line 70.
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count349
 \l__pdf_internal_box=\box120
-) (main.aux)
+) (main.aux
+Package babel Info: 'vietnamese' activates 'vietnamese' shorthands.
+(babel)             Reported  on input line 9.
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -926,11 +936,6 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
  (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 2941) in paragraph at lines 25--26
-[]\T5/cmr/bx/n/40 Sample Doc-u-
- []
-
-
 Overfull \hbox (23.69633pt too wide) in paragraph at lines 19--31
 []  [] 
  []
@@ -974,25 +979,25 @@ l.14     \listoffigures
 [3
 
 ]
-Chapter 1.
+Ch\uhorn \ohorn ng 1.
 ) (contents/signal_reflection.tex
 
 [4
 
 ]
-Chapter 2.
+Ch\uhorn \ohorn ng 2.
 ) (contents/s_parameters.tex
 
 [5
 
 ]
-Chapter 3.
+Ch\uhorn \ohorn ng 3.
 ) (contents/impedance_matching.tex
 
 [6
 
 ]
-Chapter 4.
+Ch\uhorn \ohorn ng 4.
 )
 
 [7
@@ -1014,15 +1019,15 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 5FFB783D92F62D78A624E99F41E991B9;511.
  ) 
 Here is how much of TeX's memory you used:
- 25836 strings out of 473523
- 476301 string characters out of 5714630
- 856427 words of memory out of 5000000
- 48597 multiletter control sequences out of 15000+600000
+ 25900 strings out of 473523
+ 477711 string characters out of 5714630
+ 857557 words of memory out of 5000000
+ 48659 multiletter control sequences out of 15000+600000
  572112 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,12n,90p,470b,697s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/nhano/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx12.pfb><C:/Users/nhano/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr12.pfb><C:/Users/nhano/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnti12.pfb>
-Output written on main.pdf (9 pages, 52266 bytes).
+Output written on main.pdf (9 pages, 66732 bytes).
 PDF statistics:
  95 PDF objects out of 1000 (max. 8388607)
  17 named destinations out of 1000 (max. 500000)
