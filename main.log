@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.25)  26 MAR 2025 18:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.25)  26 MAR 2025 18:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -909,7 +909,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (contents/cover.tex
-<figures/logo/logo_white.png, id=72, 258.9675pt x 254.9525pt>
+<figures/logo/logo_white.png, id=24, 258.9675pt x 254.9525pt>
 File: figures/logo/logo_white.png Graphic file (type png)
 <use figures/logo/logo_white.png>
 Package pdftex.def Info: figures/logo/logo_white.png  used on input line 13.
@@ -922,11 +922,6 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
  (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 2941) in paragraph at lines 25--26
-[]\T5/cmr/bx/n/40 Sample Doc-u-
- []
-
-
 Overfull \hbox (23.69633pt too wide) in paragraph at lines 19--30
 []  [] 
  []
@@ -965,108 +960,41 @@ l.13     \listoffigures
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- (contents/introduction.tex
+ (contents/parasitic_impedance.tex
 
 [3
 
 ]
 Chapter 1.
-) (contents/sample_main_content.tex
+) (contents/signal_reflection.tex
 
 [4
 
 ]
 Chapter 2.
-
+) (contents/s_parameters.tex
 
 [5
 
 ]
-
-<figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png, id=139, 661.72218pt x 213.79875pt>
-File: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png Graphic file (type png)
-<use figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png>
-Package pdftex.def Info: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png  used on input line 19.
-(pdftex.def)             Requested size: 66.04483pt x 21.33955pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.11469pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.11469pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
-
-[6 <./figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png>]) (contents/sample_figure.tex
-
-File: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png Graphic file (type png)
-<use figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png>
-Package pdftex.def Info: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png  used on input line 1.
-(pdftex.def)             Requested size: 66.04483pt x 21.33955pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.11469pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.11469pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
-
-[7]
 Chapter 3.
-File: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png Graphic file (type png)
-<use figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png>
-Package pdftex.def Info: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png  used on input line 5.
-(pdftex.def)             Requested size: 213.39568pt x 68.94548pt.
-File: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png Graphic file (type png)
-<use figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png>
-Package pdftex.def Info: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png  used on input line 14.
-(pdftex.def)             Requested size: 170.71393pt x 55.15573pt.
-File: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png Graphic file (type png)
-<use figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png>
-Package pdftex.def Info: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png  used on input line 19.
-(pdftex.def)             Requested size: 170.71393pt x 55.15573pt.
-) (contents/sample_table.tex
+) (contents/impedance_matching.tex
 
-[8
+[6
 
 ]
 Chapter 4.
-[9
-
-]) (contents/sample_code.tex
-
-File: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png Graphic file (type png)
-<use figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png>
-Package pdftex.def Info: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png  used on input line 1.
-(pdftex.def)             Requested size: 66.04483pt x 21.33955pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.11469pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.11469pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-15.11469pt}.
-
-[10]
-Chapter 5.
-(C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 3.
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 3.
- (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5cmtt.fd
-File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-))
 
-[11
+[7
 
-] (main.bbl)
+] (main.bbl
 
-[12
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+)
+
+[8
 
 ] (main.aux)
  ***********
@@ -1074,20 +1002,20 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6EF035D9FB66CC037C06305F7E1D8AB4;1677.
+(rerunfilecheck)             Checksum: 5FFB783D92F62D78A624E99F41E991B9;511.
  ) 
 Here is how much of TeX's memory you used:
- 26555 strings out of 473523
- 485611 string characters out of 5714630
- 1071475 words of memory out of 5000000
- 49253 multiletter control sequences out of 15000+600000
- 577454 words of font info for 70 fonts, out of 8000000 for 9000
+ 25828 strings out of 473523
+ 476171 string characters out of 5714630
+ 855322 words of memory out of 5000000
+ 48589 multiletter control sequences out of 15000+600000
+ 572112 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,15n,102p,1060b,1369s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/nhano/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx12.pfb><C:/Users/nhano/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr10.pfb><C:/Users/nhano/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr12.pfb><C:/Users/nhano/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr6.pfb><C:/Users/nhano/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnti12.pfb><C:/Users/nhano/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt10.pfb>
-Output written on main.pdf (13 pages, 164026 bytes).
+ 89i,12n,90p,470b,697s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/nhano/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx12.pfb><C:/Users/nhano/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr12.pfb><C:/Users/nhano/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnti12.pfb>
+Output written on main.pdf (9 pages, 55310 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 59 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 95 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

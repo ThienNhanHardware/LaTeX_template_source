@@ -1,17 +1,5 @@
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Sample Main Content}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Background}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Methodology}{5}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Results}{6}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Discussion}{6}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Conclusion}{6}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Sample Figure}{8}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Single figure}{8}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Multiple figure}{8}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Sample Table}{9}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Sample Code}{11}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Python}{11}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Java}{11}{section.5.2}%
-\contentsline {section}{\numberline {5.3}C++}{11}{section.5.3}%
+\contentsline {chapter}{\numberline {1}Parasitic Impedance}{4}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Signal Reflection}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {3}S-Parameters}{6}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Impedance Matching}{7}{chapter.4}%
