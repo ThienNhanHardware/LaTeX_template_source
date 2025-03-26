@@ -1,8 +1,10 @@
+\documentclass[12pt,a4paper]{report}
+\input{styles/codespace.tex}
 
-% \input{styles/macro.cls}
-\documentclass{TLclass}
-
-\input{preamble.tex}
+\setDocsName{Template Documentation}
+\setAuthName{Template Author}
+\setCityName{Template City}
+\setCOrgName{Template Organization}
 
 \begin{document}
     \input{contents/cover.tex}
@@ -12,8 +14,9 @@
     \listoftables
 
     \input{contents/introduction.tex}
+    \input{contents/sample_main_content.tex}
     \newpage
     \bibliographystyle{plain}
-    \bibliography{References}
+    \bibliography{bibliography.bib}
 
 \end{document}

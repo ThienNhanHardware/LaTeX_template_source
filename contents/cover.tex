@@ -5,12 +5,12 @@
 \begin{titlepage}
     \begin{tikzpicture}[remember picture, overlay]
         % Vẽ hình chữ nhật xanh bên trái
-        \fill[TLgreen] (current page.north west) rectangle ($(current page.south west) + (0.3\paperwidth,0)$);
+        \fill[top color=TLgreen, bottom color=black, shading angle=30] (current page.north west) rectangle ($(current page.south west) + (0.3\paperwidth,0)$);
         
         % Vẽ vòng tròn trắng
-        \fill[white] ($(current page.north west) + (0.15\paperwidth,-0.25\paperheight)$) circle (0.1\paperwidth);
+        % \fill[white] ($(current page.north west) + (0.15\paperwidth,-0.25\paperheight)$) circle (0.1\paperwidth);
         \node at ($(current page.north west) + (0.15\paperwidth,-0.25\paperheight)$) {
-            \includegraphics[width = 0.15\paperwidth, height = 0.15\paperwidth, keepaspectratio]{figures/logo/logoTL_cropped.png}
+            \includegraphics[width = 0.2\paperwidth, height = 0.2\paperwidth, keepaspectratio]{figures/logo/logo_white.png}
         };
     \end{tikzpicture}
     
@@ -22,12 +22,15 @@
     % {\Large \textit{author}} \\
     % \begin{table}
         \begin{tabular}{p{0.7\textwidth}}
-            \fontsize{50pt}{50pt}\selectfont\textbf{\docsName} \\
+            \fontsize{40pt}{40pt}\selectfont\textbf{\docsName} \\
             \\
             \fontsize{20pt}{20pt}\selectfont \textit{\authName}\\
         \end{tabular}
     % \end{table}
     \vfill
-    \hspace{0.25\paperwidth} {\large \cityName, \today}
+    \hspace{0.2\paperwidth}
+    \begin{tabular}{p{0.75\textwidth}}
+        {\large \cityName, \today}
+    \end{tabular}
 
 \end{titlepage}
