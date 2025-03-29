@@ -66,16 +66,24 @@
 
             Ví dụ, xem xét biểu đồ $S_{11}$ trong Hình \ref{fig:freq_plot}\footnote{Biểu đồ này thường được lấy bằng cách sử dụng Vector Network Analyzer (VNA), 
             có thể đo và hiển thị $S_{11}$.}, biểu đồ chỉ ra rằng bức xạ tối ưu của antenna xảy ra ở khoảng 2 GHz, tại đó $S_{11}$ đạt -12 dB. 
-            Ngược lại, ở 1,2 GHz, antenna hầu như không phát ra bất kỳ công suất nào khi $S_{11}$ tiến gần đến 0 dB, biểu thị rằng hầu như 
+            Ngược lại, ở 1.2 GHz, antenna hầu như không phát ra bất kỳ công suất nào khi $S_{11}$ tiến gần đến 0 dB, biểu thị rằng hầu như 
             toàn bộ công suất đều bị phản xạ. Hơn nữa, băng thông của antenna có thể được xác định từ biểu đồ này. Nếu băng thông được 
-            định nghĩa là dải tần số tại đó $S_{11}$ nhỏ hơn -6 dB, thì băng thông trải dài khoảng 1 GHz, với 2,5 GHz là giới hạn trên và 
-            1,5 GHz là giới hạn dưới của băng tần.
+            định nghĩa là dải tần số tại đó $S_{11}$ nhỏ hơn -6 dB, thì băng thông trải dài khoảng 1 GHz, với 2.5 GHz là giới hạn trên và 
+            1.5 GHz là giới hạn dưới của băng tần.
 
     
 
     \section{$S_{11}$ (Return Loss)}
         Định nghĩa về return loss theo hệ số phản xạ đường truyền.
         $$RL = -10\log\left(\left|\frac{P_{ref}}{P_{fwd}}\right|\right) = -20\log\left(\left|\frac{V_{ref}}{V_{fwd}}\right|\right) = -20\log\left(\left|\Gamma\right|\right)$$
+        \begin{itemize}
+            \item $P_{ref}$: Công suất phản xạ
+            \item $P_{fwd}$: Công suất tới
+            \item $V_{ref}$: Điện áp phản xạ
+            \item $V_{fwd}$: Điện áp tới
+            \item $\Gamma$: Hệ số phản xạ
+            \item $RL$: Tổn thất phản hồi (return loss)
+        \end{itemize}
 
         $S_{11}$ được định nghĩa là suy hao phản hồi âm và do đó mang giá trị dB âm.
         $$S_{11} = -RL = 20\log\left(\left|\Gamma\right|\right)$$
