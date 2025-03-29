@@ -41,6 +41,8 @@
 \usepackage{multicol}
 
 \usepackage{tikz}
+\usepackage{transparent}
+\usetikzlibrary{shadings,fadings}
 \usepackage{geometry}
 \geometry{top=3cm, bottom=3cm, left=3cm, right=3cm}
 
@@ -48,10 +50,6 @@
 
 \usepackage{fancyhdr}  % Gói hỗ trợ chỉnh header và footer
 \usepackage{background} % Gói hỗ trợ thiết lập nền
-
-\pagestyle{fancy}      % Kích hoạt kiểu header/footer fancy
-\fancyhf{}             % Xóa header/footer mặc định
-
 \backgroundsetup{
     scale=1,
     color=TLgreen,
@@ -60,14 +58,18 @@
     angle=0,
     vshift=0cm,
     % hshift=-1in,
-    pages={2-},
-    contents={\rule{25cm}{1cm}},
-    % contents={
-    %     \begin{tikzpicture}
-    %         \shade[left color=TLgreen, right color=black] 
-    %             (0,0) rectangle (25cm,1cm);
-    %     \end{tikzpicture}},
+    pages=all,
+    % contents={\rule{25cm}{1cm}},
+    contents={
+        \ifnum\value{page}>1
+            \rule{25cm}{1cm}
+        \fi
+    },
 }
+
+\pagestyle{fancy}      % Kích hoạt kiểu header/footer fancy
+\fancyhf{}             % Xóa header/footer mặc định
+
 
 % Thiết lập header
 \fancyhead[L]{\includegraphics[height = 0.75cm]{figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png}}      % Chính giữa header (tên chương)
