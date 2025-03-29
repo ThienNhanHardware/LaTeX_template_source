@@ -1,12 +1,53 @@
 \chapter{S-Parameters}
-    S-parameters là công cụ phân tích cách một mạch phản hồi với tín hiệu đầu vào.
+    \textbf{S-Parameters} là một công cụ có giá trị để tính toán 
+    \textbf{hệ số phản xạ} (reflection coefficient) và \textbf{độ lợi truyền dẫn} (transmission gain)
+    cho các đầu vào và đầu ra của mạng hai cổng. 
+    Khái niệm cơ bản này xác định tham số S cho 
+    mạng nhiều cổng, tính toán các tham số như 
+    \textit{return loss}, \textit{VSWR} và 
+    \textit{insertion loss}. 
+    Trong bối cảnh này, thuật ngữ tham số S hay 
+    tham số "tán xạ" đề cập đến cách dòng điện hoặc 
+    điện áp di chuyển bị ảnh hưởng khi chúng gặp sự 
+    cố trên đường truyền.
 
-    \section{Định nghĩa S-parameters\cite{cadence2023sparams}}
+    \section{Định nghĩa S-parameters}
+        Ma trận tham số S cho mạng 2 cổng là thành phần cơ bản để xây dựng các ma trận bậc cao hơn cho các mạng mở rộng hơn. 
+        Mối quan hệ giữa sóng đi ra (sóng phản xạ) và sóng tới và ma trận tham số S có thể được biểu thị 
+        trong công thức sau và nhân với nhau để có được các phương trình riêng cho $b_1$ và $b_2$.
+        \cite{cadence2023sparams}
+        \begin{equation}
+            \begin{bmatrix}
+                b_1 \\
+                b_2
+            \end{bmatrix}
+                =
+            \begin{bmatrix}
+                S_{11} & S_{12} \\
+                S_{21} & S_{22}
+            \end{bmatrix}
+            \begin{bmatrix}
+                a_1 \\
+                a_2
+            \end{bmatrix}
+        \end{equation}
         \begin{itemize}
-            \item Biễu diễn mạch RF dưới dạng ma trận $S$ tán xạ.
-            \item Mô tả quan hệ giữa sóng tới và sóng phản xạ.
-            \item Được đo bằng VNA (Vector Network Analyzer).
+            \item $a_i$: Sóng tới tại cổng $i$
+            \item $b_i$: Sóng phản xạ tại cổng $i$
+            \item $S_{ii}$: Hệ số phản xạ tại cổng $i$
+            \item $S_{ij}$: Hệ số truyền dẫn từ cổng $i$ đến cổng $j$
         \end{itemize}
+
+        \subsection{S-Parameters trên thang đo decibel (dB)}
+            $S_{11}$ biểu thị tổn thất phản hồi của một thiết bị, 
+            cho biết lượng công suất đầu vào được cung cấp cho thiết bị 
+            phản xạ trở lại cổng đầu vào. 
+            Lý tưởng nhất là không nên có công suất phản xạ và 
+            100\% công suất phải được cung cấp cho thiết bị.\par
+
+            Khi $S_{11}$ ở mức -10 dB, điều đó có nghĩa là ít nhất 90\% 
+            công suất đầu vào được truyền hiệu quả đến thiết bị, 
+            với ít hơn 10\% bị phản xạ.
 
     \section{Trở kháng đầu vào (Input Impedance)}
         Trở kháng đầu vào (Zin) là trở kháng mà nguồn nhìn thấy khi tín hiệu đi vào đường truyền.
