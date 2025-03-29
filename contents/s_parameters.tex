@@ -10,6 +10,13 @@
     tham số "tán xạ" đề cập đến cách dòng điện hoặc 
     điện áp di chuyển bị ảnh hưởng khi chúng gặp sự 
     cố trên đường truyền.
+    
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{figures/freq_plot.png}
+        \caption{Frequency plot of absolute values $S_{11}$ scattering parameters equal to the return loss. Notice 0 dB at approximately 2 GHz.}
+        \label{fig:freq_plot}
+    \end{figure}
 
     \section{Định nghĩa S-parameters}
         Ma trận tham số S cho mạng 2 cổng là thành phần cơ bản để xây dựng các ma trận bậc cao hơn cho các mạng mở rộng hơn. 
@@ -49,29 +56,45 @@
             công suất đầu vào được truyền hiệu quả đến thiết bị, 
             với ít hơn 10\% bị phản xạ.
 
+        \subsection{S-Parameters trong ứng dụng antenna}
             Trong ứng dụng antenna, nếu $S_{11}$ là 0 dB, điều đó chỉ ra rằng
-            toàn bộ công suất được phản xạ từ antenna và không bị bức xạ.\par
+            toàn bộ công suất được phản xạ từ antenna và không bị bức xạ.
+            Ngược lại khi $S_{11}$ là -10 dB, nghĩa rằng nếu 3 dB công suất được
+            đưa vào antenna, thì chỉ có -7 dB bị phản xạ, phần còn lại được bức xạ 
+            hoặc hấp thụ dưới dạng tổn thất trong antenna. Antenna được thiết kế
+            để giảm thiểu tổn thất, đảm bảo hầu hết được truyền đến antenna đều được bức xạ.\cite{cadence2023sparams}
 
-    \section{Trở kháng đầu vào (Input Impedance)}
-        Trở kháng đầu vào (Zin) là trở kháng mà nguồn nhìn thấy khi tín hiệu đi vào đường truyền.
-        \begin{equation}
-            Z_{in} = Z_0 \frac{Z_L + Z_0 \tanh(\gamma l)}{Z_0 + jZ_L \tanh(\gamma l)}
-            \label{eq:zin}    
-        \end{equation}
-        
-        \begin{itemize}
-            \item $l$: Chiều dài đường truyền
-        \end{itemize}
+            Ví dụ, xem xét biểu đồ $S_{11}$ trong Hình \ref{fig:freq_plot}\footnote{Biểu đồ này thường được lấy bằng cách sử dụng Vector Network Analyzer (VNA), 
+            có thể đo và hiển thị $S_{11}$.}, biểu đồ chỉ ra rằng bức xạ tối ưu của antenna xảy ra ở khoảng 2 GHz, tại đó $S_{11}$ đạt -12 dB. 
+            Ngược lại, ở 1,2 GHz, antenna hầu như không phát ra bất kỳ công suất nào khi $S_{11}$ tiến gần đến 0 dB, biểu thị rằng hầu như 
+            toàn bộ công suất đều bị phản xạ. Hơn nữa, băng thông của antenna có thể được xác định từ biểu đồ này. Nếu băng thông được 
+            định nghĩa là dải tần số tại đó $S_{11}$ nhỏ hơn -6 dB, thì băng thông trải dài khoảng 1 GHz, với 2,5 GHz là giới hạn trên và 
+            1,5 GHz là giới hạn dưới của băng tần.
 
-    \section{S11 (Return Loss)}
+    
+
+    \section{$S_{11}$ (Return Loss)}
         Định nghĩa về return loss theo hệ số phản xạ đường truyền.
-        $$RL = -10\log\left(\left|\frac{P_{ref}}{P_{inc}}\right|\right) = -20\log\left(\left|\frac{V_{ref}}{V_{inc}}\right|\right) = -20\log\left(\left|\Gamma\right|\right)$$
-        Trở kháng đầu vào và S11 (return loss) đều liên quan đến hệ số phản xạ của đường truyền. Các tham số S thực là các hàm phức tạp của tần số và có thể có một tập hợp phức tạp các cộng hưởng/phản cộng hưởng (resonances/antiresonances); ví dụ về đường truyền được kết nối với điện dung tải 1 pF được kết thúc ở 50 Ohm được hiển thị bên dưới.\par
+        $$RL = -10\log\left(\left|\frac{P_{ref}}{P_{fwd}}\right|\right) = -20\log\left(\left|\frac{V_{ref}}{V_{fwd}}\right|\right) = -20\log\left(\left|\Gamma\right|\right)$$
+
+        $S_{11}$ được định nghĩa là suy hao phản hồi âm và do đó mang giá trị dB âm.
+        $$S_{11} = -RL = 20\log\left(\left|\Gamma\right|\right)$$
+        Trở kháng đầu vào và $S_{11}$ (return loss) đều liên quan đến hệ số phản xạ của đường truyền. Các tham số S thực là các hàm phức tạp của tần số và có thể có một tập hợp phức tạp các cộng hưởng/phản cộng hưởng (resonances/antiresonances); ví dụ về đường truyền được kết nối với điện dung tải 1 pF được kết thúc ở 50 Ohm được hiển thị bên dưới.\par
         \begin{figure}[h]
             \centering
             \includegraphics[width=0.5\textwidth]{figures/1pf_input.png}
-            \caption{Comparison of S11 and reflection coefficient at the input to a load component with 1 pF input capacitance.}
+            \caption{Comparison of $S_{11}$ and reflection coefficient at the input to a load component with 1 pF input capacitance.}
         \end{figure}
 
-        Đường truyền hoạt động giống như một khoang cộng hưởng điển hình\footnote{\href{https://resources.pcb.cadence.com/blog/2019-what-is-a-cavity-resonator-and-how-is-one-used-in-pcb-design}{\color{blue}What is a Cavity Resonator and How is One Used in PCB Design}} và có cấu trúc cộng hưởng khi đường truyền rất ngắn. khi đường truyền dài hơn, tổn thất bắt đầu chiếm ưu thế và cộng hưởng trong phổ S11 bắt đầu biến mất.\cite{cadence2021transmission}\par
+        Đường truyền hoạt động giống như một khoang cộng hưởng điển hình\footnote{\href{https://resources.pcb.cadence.com/blog/2019-what-is-a-cavity-resonator-and-how-is-one-used-in-pcb-design}{\color{blue}What is a Cavity Resonator and How is One Used in PCB Design}} và có cấu trúc cộng hưởng khi đường truyền rất ngắn. khi đường truyền dài hơn, tổn thất bắt đầu chiếm ưu thế và cộng hưởng trong phổ $S_{11}$ bắt đầu biến mất.\cite{cadence2021transmission}\par
         Khi kéo dài đường truyền ra vô cực, trở kháng đầu vào tại mỗi cổng giảm xuống (Phương trình \ref{eq:zin}). Đối với các đường truyền thực tế hoạt động ở tần số thực tế, cần phải mô tả hành vi tín hiệu theo trở kháng đầu vào và tham số S, đặc biệt là khi đường truyền ngắn.\cite{cadence2021transmission}\par
+
+    \section{VSWR}
+        Tỷ lệ sóng đứng điện áp (Voltage Standing Wave Ratio - VSWR) đo lường mức độ phù hợp của cổng, 
+        tương tự như tổn thất phản hồi. Tuy nhiên, VSWR khác biệt ở chỗ nó là một tham số tuyến tính vô hướng, 
+        biểu thị tỷ lệ giữa điện áp cực đại và cực tiểu của sóng đứng\footnote{\href{https://resources.pcb.cadence.com/blog/2022-understanding-standing-wave-patterns-on-interconnects-and-antennas}{\color{blue}Understanding Standing Wave Patterns on Interconnects and Antennas}}. 
+        Do đó, VSWR được kết nối trực tiếp với độ lớn của hệ số phản xạ điện áp, 
+        đến lượt nó, tương quan với $S_{11}$ cho cổng đầu vào hoặc $S_{22}$ cho cổng đầu ra.
+        \begin{equation}
+            {VSWR}_{IN} = \frac{1 + |S_{11}|}{1 - |S_{11}|}, \quad {VSWR}_{OUT} = \frac{1 + |S_{22}|}{1 - |S_{22}|}
+        \end{equation}

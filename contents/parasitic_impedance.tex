@@ -39,3 +39,15 @@ Các thành phần gây ra trở kháng ký sinh bao gồm:
     \item Sử dụng phần mềm mô phỏng RF: Các phần mềm như ADS (Advanced Design System), HFSS (High-Frequency Structure Simulator) và Ansys giúp phân tích trở kháng, đặc tính truyền dẫn và xác định các vấn đề về parasitic impedance trước khi sản xuất mạch thật.
     \item Đo kiểm bằng Vector Network Analyzer (VNA): Thiết bị này giúp kiểm tra trở kháng, hệ số phản xạ (S11), độ suy hao chèn (S21) và các thông số quan trọng khác để đánh giá hiệu suất thực tế của mạch RF.
 \end{itemize}
+
+    % Để nội dung ở đây, sửa nếu cần
+    \section{Trở kháng đầu vào (Input Impedance)}
+        Trở kháng đầu vào (Zin) là trở kháng mà nguồn nhìn thấy khi tín hiệu đi vào đường truyền.
+        \begin{equation}
+            Z_{in} = Z_0 \frac{Z_L + Z_0 \tanh(\gamma l)}{Z_0 + jZ_L \tanh(\gamma l)}
+            \label{eq:zin}    
+        \end{equation}
+        
+        \begin{itemize}
+            \item $l$: Chiều dài đường truyền
+        \end{itemize}
