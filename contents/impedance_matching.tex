@@ -1,6 +1,6 @@
 \chapter{Impedance Matching}
     \section{Định nghĩa Impedance Matching}
-        Impedance matching là quá trình mà trở kháng đầu vào và trở kháng đầu ra 
+        Impedance matching là quá trình mà \textbf{trở kháng đầu vào và trở kháng đầu ra} 
         của một tải điện nhất định được thiết kế để \textbf{giảm phản xạ tín hiệu} và 
         \textbf{tối đa hóa công suất} truyền đến tải điện.\cite{allaboutcircuits_impedance}
     
@@ -67,3 +67,23 @@
             R' = R\left[1 + Q^2\right]
         \end{equation}
         Từ các phương trình trên, ta có thể dễ dàng giải được bài toán phối hợp trở kháng trong bất kỳ mạch điện nào.\cite{allaboutcircuits_impedance}
+
+    \section{Tầm quan trọng của Impedance Matching}
+        Impedance matching cần được đảm bảo trong các thiết kế mạch tần số cao
+        và mạch tốc độ cao. Nếu impedance trên đường tín hiệu bị sai lệch,
+        khả năng cao xung sẽ bị méo và tín hiệu sẽ bị phản xạ.\par
+        Mạch điện sẽ hoạt động tốt nhất khi có trở kháng phù hợp, nếu không, cả hệ thống sẽ hoạt động bất thường do hiệu ứng từ phản xạ tín hiệu.
+        Sóng phản xạ sẽ gây ra độ trễ tín hiệu, làm méo pha, hay làm tín hiệu bị nhiễu.
+        
+    \section{Transformer impedance matching}
+
+    \section{Transmission line impedance matching}
+        Trên một transmission line, nếu đường truyền càng dài,
+        sẽ có trở kháng đặc trưng của đường truyền khác nhau khác
+        ở các khoảng cách khác nhau dọc theo transmission line.
+        Nếu không thực hiện impedance matching, tín hiệu sẽ bị phản xạ
+        và tạo ra sóng dừng.
+
+    \section{Antenna impedance matching}
+
+    \section{Impedance matching trong mạch RF}
