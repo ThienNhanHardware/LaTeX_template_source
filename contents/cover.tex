@@ -1,40 +1,51 @@
-
+% ==========================
 % Trang bìa
+% ==========================
 
-\thispagestyle{empty} % Xóa số trang
+\thispagestyle{empty} % Xóa số trang trên trang bìa
 
 \begin{titlepage}
+    % ==========================
+    % Thiết kế nền trang bìa
+    % ==========================
     \begin{tikzpicture}[remember picture, overlay]
-        % Vẽ hình chữ nhật xanh bên trái
-        \shade[left color=black, right color=white!0, shading angle=37, opacity=0.75] (current page.north west) rectangle ([yshift=0.1\textheight]$(current page.south west) + (0.3\paperwidth,0)$);
-        \shade[left color=TLgreen, right color=white!0, shading angle=37, opacity=0.75] (current page.north west) rectangle ([yshift=0.1\textheight]$(current page.south west) + (0.3\paperwidth,0)$);
+        % Vẽ hình chữ nhật màu xanh bên trái
+        \shade[left color=black, right color=white!0, shading angle=37, opacity=0.75] 
+            (current page.north west) rectangle 
+            ([yshift=0.1\textheight]$(current page.south west) + (0.3\paperwidth,0)$);
+        \shade[left color=TLgreen, right color=white!0, shading angle=37, opacity=0.75] 
+            (current page.north west) rectangle 
+            ([yshift=0.1\textheight]$(current page.south west) + (0.3\paperwidth,0)$);
         
-        % Vẽ vòng tròn trắng
-        % \fill[white] ($(current page.north west) + (0.15\paperwidth,-0.25\paperheight)$) circle (0.1\paperwidth);
+        % Vẽ logo ở góc trên bên trái
         \node at ($(current page.north west) + (0.15\paperwidth,-0.25\paperheight)$) {
-            \includegraphics[width = 0.2\paperwidth, height = 0.2\paperwidth, keepaspectratio]{figures/logo/logo_white.png}
+            \includegraphics[width=0.2\paperwidth, height=0.2\paperwidth, keepaspectratio]{figures/logo/logo_white.png}
         };
     \end{tikzpicture}
     
-    % Văn bản trên trang bìa
-    \vspace{0.1\paperheight}
-    \hspace{0.2\paperwidth}
-    % {\Huge \textbf{Document Name}} \\
-    % \hspace*{0.35\paperwidth}
-    % {\Large \textit{author}} \\
-    % \begin{table}
-        \begin{tabular}{p{0.7\textwidth}}
-            \fontsize{35pt}{40pt}\selectfont\textbf{\docsName} \\
-            \\
-            \fontsize{20pt}{20pt}\selectfont \textit{\authNameFirst} \\
-            \fontsize{20pt}{20pt}\selectfont \textit{\authNameSecond} \\
-        \end{tabular}
-    % \end{table}
-    \vfill
+    % ==========================
+    % Tiêu đề và tác giả
+    % ==========================
+    \vspace{0.1\paperheight} % Khoảng cách từ trên xuống
+    \hspace{0.2\paperwidth} % Căn lề trái cho văn bản
+    \begin{tabular}{p{0.7\textwidth}}
+        \fontsize{40pt}{40pt}\selectfont\textbf{\docsName} \\ % Tên tài liệu
+        \\ % Dòng trống
+        \fontsize{20pt}{20pt}\selectfont \textit{\authNameFirst} \\ % Tác giả 1
+        \fontsize{20pt}{20pt}\selectfont \textit{\authNameSecond} \\ % Tác giả 2
+    \end{tabular}
+
+    \vfill % Đẩy nội dung xuống cuối trang
+
+    % Thông tin thành phố và ngày tháng
     \hspace{0.2\paperwidth}
     \begin{tabular}{p{0.75\textwidth}}
-        \centering {\large \cityName, \today}
+        \centering {\large \cityName, \today} % Thành phố và ngày tháng
     \end{tabular}
 \end{titlepage}
+
+% ==========================
+% Thiết lập số trang sau trang bìa
+% ==========================
 \newpage
-\setcounter{page}{2}
+\setcounter{page}{2} % Đặt số trang bắt đầu từ 2
