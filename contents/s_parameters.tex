@@ -7,7 +7,7 @@
     \textit{return loss}, \textit{VSWR} và 
     \textit{insertion loss}. 
     Trong bối cảnh này, thuật ngữ tham số S hay 
-    tham số "tán xạ" đề cập đến cách dòng điện hoặc 
+    tham số \textbf{tán xạ} đề cập đến cách dòng điện hoặc 
     điện áp di chuyển bị ảnh hưởng khi chúng gặp sự 
     cố trên đường truyền.
     
@@ -64,7 +64,7 @@
             hoặc hấp thụ dưới dạng tổn thất trong antenna. Antenna được thiết kế
             để giảm thiểu tổn thất, đảm bảo hầu hết được truyền đến antenna đều được bức xạ.\cite{cadence2023sparams}
 
-            Ví dụ, xem xét biểu đồ $S_{11}$ trong Hình \ref{fig:freq_plot}\footnote{Biểu đồ này thường được lấy bằng cách sử dụng Vector Network Analyzer (VNA), 
+            Ví dụ, xem xét biểu đồ $S_{11}$ trong \autoref{fig:freq_plot}\footnote{Biểu đồ này thường được lấy bằng cách sử dụng Vector Network Analyzer (VNA), 
             có thể đo và hiển thị $S_{11}$.}, biểu đồ chỉ ra rằng bức xạ tối ưu của antenna xảy ra ở khoảng 2 GHz, tại đó $S_{11}$ đạt -12 dB. 
             Ngược lại, ở 1.2 GHz, antenna hầu như không phát ra bất kỳ công suất nào khi $S_{11}$ tiến gần đến 0 dB, biểu thị rằng hầu như 
             toàn bộ công suất đều bị phản xạ. Hơn nữa, băng thông của antenna có thể được xác định từ biểu đồ này. Nếu băng thông được 
@@ -95,7 +95,7 @@
         \end{figure}
 
         Đường truyền hoạt động giống như một khoang cộng hưởng điển hình\footnote{\href{https://resources.pcb.cadence.com/blog/2019-what-is-a-cavity-resonator-and-how-is-one-used-in-pcb-design}{\color{blue}What is a Cavity Resonator and How is One Used in PCB Design}} và có cấu trúc cộng hưởng khi đường truyền rất ngắn. khi đường truyền dài hơn, tổn thất bắt đầu chiếm ưu thế và cộng hưởng trong phổ $S_{11}$ bắt đầu biến mất.\cite{cadence2021transmission}\par
-        Khi kéo dài đường truyền ra vô cực, trở kháng đầu vào tại mỗi cổng giảm xuống (Phương trình \ref{eq:zin}). Đối với các đường truyền thực tế hoạt động ở tần số thực tế, cần phải mô tả hành vi tín hiệu theo trở kháng đầu vào và tham số S, đặc biệt là khi đường truyền ngắn.\cite{cadence2021transmission}\par
+        Khi kéo dài đường truyền ra vô cực, trở kháng đầu vào tại mỗi cổng giảm xuống (\autoref{eq:zin}). Đối với các đường truyền thực tế hoạt động ở tần số thực tế, cần phải mô tả hành vi tín hiệu theo trở kháng đầu vào và tham số S, đặc biệt là khi đường truyền ngắn.\cite{cadence2021transmission}\par
 
     \section{VSWR}
         Tỷ lệ sóng đứng điện áp (Voltage Standing Wave Ratio - VSWR) đo lường mức độ phù hợp của cổng, 

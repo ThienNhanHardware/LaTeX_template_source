@@ -17,7 +17,7 @@
         cho phép truyền công suất cực đại từ nguồn đến tải. 
         Công suất cực đại truyền đến tải phụ thuộc vào kích thước của điện trở tải.\par
 
-        Từ mạch trong hình \ref{fig:max_power_transfer_circuit}, công suất truyền đến điện trở tải:
+        Từ mạch trong \autoref{fig:max_power_transfer_circuit}, công suất truyền đến điện trở tải:
         \begin{equation}
             P = I_L^2 R_L = \frac{V^2 R_L}{(R_i + R_L)^2}
         \end{equation}
@@ -98,3 +98,15 @@
     \section{Conjugate Matching}
     \section{Reflectionless Matching}
     \cite{cadence2021conjugatematching}
+    
+    \section{Matching Networks}
+        Các matching networks thông thường chỉ sử dụng các \textbf{linh kiện lưu trữ năng lượng} 
+        thay vì tiêu tán năng lượng. Đặc điểm này xuất phát tự nhiên từ mục đích 
+        của matching networks, cụ thể là cho phép truyền \textbf{công suất tối đa} từ nguồn đến tải. 
+        Nếu matching networks chứa các thành phần tiêu tán năng lượng, nó sẽ tiêu thụ một phần công suất 
+        mà chúng ta đang cố gắng cung cấp cho tải. Do đó, matching networks sử dụng \textbf{tụ điện} 
+        và \textbf{cuộn cảm}, chứ không phải điện trở.\cite{allaboutcircuits_matchingNetworks}\par
+
+        Rất khó để thiết kế một matching networks băng thông rộng, do matching networks bao gồm các tụ điện và cuộn cảm.
+        Bởi vì trở kháng của cuộn cảm và tụ điện phụ thuộc vào tần số, do đó việc thay đổi tần số của tín hiệu đi qua matching networks 
+        có thể khiến nó kém hiệu quả hơn.\par
