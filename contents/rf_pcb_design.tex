@@ -53,15 +53,22 @@
             \caption{Return Loss}
             \label{fig:return_loss_antenna}
         \end{figure}
+
         
         \begin{table}[h]
             \centering
             \begin{tabular}{|c|c|c|c|}
                 \hline
-                $\mathbf{S_{11}}$   &   \textbf{Return Loss (dB)}   &   \textbf{$\mathbf{\frac{P_{reflected}}{P_{incident}}}$ (\%)} &   \textbf{$\mathbf{\frac{P_{radiated}}{P_{incident}}}$ (\%)}  \\\hline
-                aw & awd & awd & awd a\\\hline
-                
-                
+                \rowcolor{TLgreen!50}
+                &   &   &   \\
+                \arrayrulecolor{TLgreen!50}
+                \cline{1-4}
+                \arrayrulecolor{black}
+                \multirow{-2}{*}{\cellcolor{TLgreen!50}$\mathbf{S_{11}}$}  &   \multirow{-2}{*}{\cellcolor{TLgreen!50}\textbf{Return Loss (dB)}}  &   \multirow{-2}{*}{\cellcolor{TLgreen!50}\textbf{$\mathbf{\frac{P_{reflected}}{P_{incident}}}$ (\%)}}    &   \multirow{-2}{*}{\cellcolor{TLgreen!50}\textbf{$\mathbf{\frac{P_{radiated}}{P_{incident}}}$ (\%)}} \\\hline
+                -20 &   20 &   1\%  &   99\% \\\hline
+                -10 &   10 &   10\% &   90\% \\\hline
+                -3  &   3  &   50\% &   50\% \\\hline
+                -1  &   1  &   79\% &   21\% \\\hline
             \end{tabular}
             \caption{Return Loss and Power Reflected from Antenna}
             \label{tab:return_loss_antenna}
