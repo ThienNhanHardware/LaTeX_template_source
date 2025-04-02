@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.25)  2 APR 2025 16:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.25)  2 APR 2025 16:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -513,17 +513,28 @@ Package: babel 2025/03/10 v25.5 The multilingual framework for pdfLaTeX, LuaLaTe
 *
 (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: Hyphen rules for 'canadian' set to \l@english
-(babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language73). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language73). Reported on input line 108.
-)) (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-english.tex
-Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 11.
+) (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/babel-vietnamese\vietnamese.ldf
+Language: vietnamese 
+
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language 'Vietnamese' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=0 instead on input line 36.
+
+Package babel Info: Hyphen rules for 'vietnamese' set to \l@english
+(babel)             (\language0). Reported on input line 37.
+Package babel Info: Hyphen rules for 'vietnam' set to \l@english
+(babel)             (\language0). Reported on input line 38.
+Loading definitions for the Vietnamese font encoding (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5enc.def
+File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
+LaTeX Font Info:    Redeclaring font encoding T5 on input line 75.
+)
+Package babel Info: Making " an active character on input line 147.
+)) (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/vi\babel-vietnamese.tex
+Package babel Info: Importing font and identification data for vietnamese
+(babel)             from babel-vi.ini. Reported on input line 11.
 ) (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
@@ -901,7 +912,6 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@lstlisting=\count358
 Package hyperref Info: Link coloring OFF on input line 10.
- (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -911,6 +921,8 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
+Package babel Info: 'vietnamese' activates 'vietnamese' shorthands.
+(babel)             Reported  on input line 10.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -946,181 +958,27 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(contents/cover.tex
-<figures/logo/logo_white.png, id=98, 258.9675pt x 254.9525pt>
-File: figures/logo/logo_white.png Graphic file (type png)
-<use figures/logo/logo_white.png>
-Package pdftex.def Info: figures/logo/logo_white.png  used on input line 22.
-(pdftex.def)             Requested size: 119.50188pt x 117.64914pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
- (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
- (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 2941) in paragraph at lines 32--33
-[]|\T5/cmr/bx/n/40 Sample Doc-u-
- []
 
+! LaTeX Error: File `contents/cover.tex' not found.
 
-Overfull \hbox (6.07152pt too wide) in paragraph at lines 30--37
-[]  [] 
- []
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
 
+Enter file name: 
+d:/Documents/LaTeX_template_source/main.tex:11: Emergency stop.
+<read *> 
+         
+l.11     \input{contents/cover.tex}
+                                   ^^M
+*** (cannot \read from terminal in nonstop modes)
 
-Overfull \hbox (27.41238pt too wide) in paragraph at lines 41--45
-[]  [] 
- []
-
-
-
-[1
-
-{C:/Users/nhano/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./figures/logo/logo_white.png>]) (main.toc)
-\tf@toc=\write5
-\openout5 = `main.toc'.
-
-
-
-[2
-
-] (main.lof)
-\tf@lof=\write6
-\openout6 = `main.lof'.
-
-
-
-[3
-
-] (main.lot)
-\tf@lot=\write7
-\openout7 = `main.lot'.
-
- (contents/introduction.tex
-
-[4
-
-]
-Chapter 1.
-) (contents/sample_main_content.tex
-
-[5
-
-]
-Chapter 2.
-
-
-[6
-
-]
-
-<figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png, id=166, 661.72218pt x 213.79875pt>
-File: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png Graphic file (type png)
-<use figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png>
-Package pdftex.def Info: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png  used on input line 19.
-(pdftex.def)             Requested size: 105.67577pt x 34.14322pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 62.99326pt, for example:
-(fancyhdr)                \setlength{\headheight}{62.99326pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-50.99326pt}.
-
-[7 <./figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png>]) (contents/sample_figure.tex
-
-File: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png Graphic file (type png)
-<use figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png>
-Package pdftex.def Info: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png  used on input line 1.
-(pdftex.def)             Requested size: 105.67577pt x 34.14322pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 62.99326pt, for example:
-(fancyhdr)                \setlength{\headheight}{62.99326pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-50.99326pt}.
-
-[8]
-Chapter 3.
-File: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png Graphic file (type png)
-<use figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png>
-Package pdftex.def Info: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png  used on input line 5.
-(pdftex.def)             Requested size: 213.39568pt x 68.94548pt.
-File: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png Graphic file (type png)
-<use figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png>
-Package pdftex.def Info: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png  used on input line 14.
-(pdftex.def)             Requested size: 170.71393pt x 55.15573pt.
-File: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png Graphic file (type png)
-<use figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png>
-Package pdftex.def Info: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png  used on input line 19.
-(pdftex.def)             Requested size: 170.71393pt x 55.15573pt.
-) (contents/sample_table.tex
-
-[9
-
-]
-Chapter 4.
-[10
-
-]) (contents/sample_code.tex
-
-File: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png Graphic file (type png)
-<use figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png>
-Package pdftex.def Info: figures/logo/START_HERE__GO_ANYWHERE-removebg-preview.png  used on input line 1.
-(pdftex.def)             Requested size: 105.67577pt x 34.14322pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 62.99326pt, for example:
-(fancyhdr)                \setlength{\headheight}{62.99326pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-50.99326pt}.
-
-[11]
-Chapter 5.
-(C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 3.
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 3.
- (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5cmtt.fd
-File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-))
-
-[12
-
-] (main.bbl)
-
-[13
-
-] (main.aux)
- ***********
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
- ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6EF035D9FB66CC037C06305F7E1D8AB4;1677.
- ) 
+ 
 Here is how much of TeX's memory you used:
- 27047 strings out of 473523
- 497688 string characters out of 5714630
- 1082393 words of memory out of 5000000
- 49709 multiletter control sequences out of 15000+600000
- 577454 words of font info for 70 fonts, out of 8000000 for 9000
+ 26116 strings out of 473523
+ 483814 string characters out of 5714630
+ 863805 words of memory out of 5000000
+ 48915 multiletter control sequences out of 15000+600000
+ 560107 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,15n,102p,1060b,1367s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/nhano/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx12.pfb><C:/Users/nhano/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr10.pfb><C:/Users/nhano/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr12.pfb><C:/Users/nhano/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr6.pfb><C:/Users/nhano/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnti12.pfb><C:/Users/nhano/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt10.pfb>
-Output written on main.pdf (13 pages, 173771 bytes).
-PDF statistics:
- 263 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 259 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 89i,1n,90p,561b,343s stack positions out of 10000i,1000n,20000p,200000b,200000s
+d:/Documents/LaTeX_template_source/main.tex:11:  ==> Fatal error occurred, no output PDF file produced!
