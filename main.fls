@@ -294,6 +294,9 @@ INPUT C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex\latex\tools\afterpage.sty
 INPUT C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex\latex\tools\afterpage.sty
 INPUT C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT .\main.aux
+INPUT .\main.aux
+INPUT main.aux
 OUTPUT main.aux
 INPUT C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii

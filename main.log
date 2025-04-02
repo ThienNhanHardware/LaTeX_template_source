@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.25)  2 APR 2025 16:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.25)  2 APR 2025 17:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -868,8 +868,7 @@ Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count351
 \l__pdf_internal_box=\box122
-)
-No file main.aux.
+) (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -892,7 +891,7 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
-(C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+ (C:\Users\nhano\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count352
 \scratchdimen=\dimen297
@@ -975,10 +974,10 @@ l.11     \input{contents/cover.tex}
 
  
 Here is how much of TeX's memory you used:
- 26112 strings out of 473523
- 483707 string characters out of 5714630
- 863814 words of memory out of 5000000
- 48914 multiletter control sequences out of 15000+600000
+ 26116 strings out of 473523
+ 483814 string characters out of 5714630
+ 863805 words of memory out of 5000000
+ 48915 multiletter control sequences out of 15000+600000
  560107 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,1n,90p,561b,343s stack positions out of 10000i,1000n,20000p,200000b,200000s
