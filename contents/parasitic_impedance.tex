@@ -1,0 +1,53 @@
+\chapter{Parasitic Impedance}
+
+\section{Khái quát về Parasitic Impedance}
+
+\hspace{13pt} Parasitic Impedance (trở kháng ký sinh) là trở kháng không mong muốn, bao gồm điện dung, điện cảm và điện trở phát sinh xuất hiện trong các mạch điện tử, đặc biệt là trong các thiết kế mạch in PCB. Trở kháng này không được thiết kế chủ đích mà phát sinh tự nhiên từ các đặc tính vật lý của vật liệu, đường mạch và linh kiện trong quá trình thiết kế và sản xuất.
+
+Ở tần số cao, Parasitic Impedance trở thành yếu tố quan trọng tác động đến hiệu suất hệ thống. Các thành phần ký sinh trong mạch in, linh kiện và kết nối có thể gây suy hao tín hiệu, phản xạ không mong muốn, nhiễu xuyên âm và làm giảm đáng kể hiệu suất tổng thể của mạch RF.
+
+Các thành phần gây ra trở kháng ký sinh bao gồm:
+\begin{itemize}
+    \item Parasitic Resistance: Điện trở ký sinh gây suy hao công suất trong đường truyền RF. Chúng xuất hiện trong mạch in, dây dẫn và linh kiện thụ động.
+    \item Parasitic Capacitance: Điện dung ký sinh gây ra các hiện tượng nhiễu xuyên âm (Crosstalk) và phản xạ tín hiệu (Signal reflection). Chúng xuất hiện do mạch in có các đường tín hiệu gần nhau hoặc tồn tại trong các linh kiện điện tử.
+    \item Parasitic Inductance: Điện cảm ký sinh gây ra nhiễu và suy giảm tín hiệu ở tần số cao. Chúng xuất hiện trong các via, kết nối, đường dây dẫn hoặc linh kiện điện tử.
+\end{itemize}
+
+\section{Các phương pháp giảm thiểu Parasitic Impedance}
+
+\subsection{Tối ưu Thiết Kế PCB}
+
+\hspace{13pt} Thiết kế PCB đóng vai trò quan trọng trong việc kiểm soát parasitic impedance. Một số nguyên tắc quan trọng cần tuân thủ gồm:
+\begin{itemize}
+    \item Giữ đường mạch ngắn và tránh stub: Các đường dẫn tín hiệu càng dài thì ký sinh cảm và điện dung càng lớn, ảnh hưởng đến hiệu suất truyền dẫn. Việc loại bỏ các stub giúp tránh các phản xạ không mong muốn.
+    \item Duy trì trở kháng (Impedance Matching): Đối với hệ thống RF, việc duy trì trở kháng đặc trưng của đường truyền là rất quan trọng để tránh mất mát và phản xạ tín hiệu. Điều này có thể đạt được bằng cách sử dụng cấu trúc microstrip hoặc stripline và tính toán trở kháng đường mạch phù hợp.
+    \item Sử dụng Ground Plane và Vias: Một Ground Plane tốt giúp giảm nhiễu và tạo đường phản hồi (return path) hiệu quả. Việc sử dụng nhiều vias để kết nối các lớp tiếp địa cũng giúp giảm ký sinh cảm và điện trở tiếp đất.
+\end{itemize}
+
+\subsection{Lựa chọn linh kiện phù hợp}
+
+\hspace{13pt} Các linh kiện sử dụng trong thiết kế RF cũng cần được lựa chọn cẩn thận để giảm thiểu parasitic impedance:
+\begin{itemize}
+    \item Dùng linh kiện RF có đặc tính tần số cao: Khi làm việc với tần số cao, cần sử dụng các linh kiện có thông số điện cảm ký sinh thấp (Low ESL - Equivalent Series Inductance) và điện trở nối tiếp thấp (Low ESR - Equivalent Series Resistance) để tránh suy hao tín hiệu.
+    \item Chọn package linh kiện phù hợp: Các linh kiện có kích thước nhỏ hơn thường có parasitic inductance thấp hơn. Do đó, ưu tiên sử dụng package như 0402, 0201 hoặc linh kiện flip-chip thay vì package through-hole hoặc DIP có tự cảm ký sinh cao hơn.
+\end{itemize}
+
+\subsection{Kiểm Tra và Mô Phỏng}
+
+\hspace{13pt} Ngay cả khi đã áp dụng các phương pháp tối ưu, việc kiểm tra và mô phỏng vẫn rất quan trọng để xác minh hiệu quả của thiết kế:
+\begin{itemize}
+    \item Sử dụng phần mềm mô phỏng RF: Các phần mềm như ADS (Advanced Design System), HFSS (High-Frequency Structure Simulator) và Ansys giúp phân tích trở kháng, đặc tính truyền dẫn và xác định các vấn đề về parasitic impedance trước khi sản xuất mạch thật.
+    \item Đo kiểm bằng Vector Network Analyzer (VNA): Thiết bị này giúp kiểm tra trở kháng, hệ số phản xạ (S11), độ suy hao chèn (S21) và các thông số quan trọng khác để đánh giá hiệu suất thực tế của mạch RF.
+\end{itemize}
+
+    % Để nội dung ở đây, sửa nếu cần
+    \section{Trở kháng đầu vào (Input Impedance)}
+        Trở kháng đầu vào (Zin) là trở kháng mà nguồn nhìn thấy khi tín hiệu đi vào đường truyền.
+        \begin{equation}
+            Z_{in} = Z_0 \frac{Z_L + Z_0 \tanh(\gamma l)}{Z_0 + jZ_L \tanh(\gamma l)}
+            \label{eq:zin}    
+        \end{equation}
+        
+        \begin{itemize}
+            \item $l$: Chiều dài đường truyền
+        \end{itemize}
