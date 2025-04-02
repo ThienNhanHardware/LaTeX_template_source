@@ -1,0 +1,31 @@
+\documentclass[12pt,a4paper]{report}
+\input{styles/codespace.tex}
+
+\setDocsName{RF PCB Design}
+\setAuthNameFirst{Trần Hải Thảo Quảng}
+\setAuthNameSecond{Hồng Thiện Nhân}
+\setCityName{TP. Hồ Chí Mình}
+\setOrgName{TickLab}
+
+\begin{document}
+    \input{contents/cover.tex}
+    \tableofcontents
+    \listoffigures
+    \listoftables
+    % \input{contents/introduction.tex}
+    % \input{contents/sample_main_content.tex}
+    % \input{contents/sample_figure.tex}
+    % \input{contents/sample_table.tex}
+    % \input{contents/sample_code.tex}
+
+    \input{contents/parasitic_impedance.tex}
+    \input{contents/signal_reflection.tex}
+    \input{contents/s_parameters.tex}
+    \input{contents/impedance_matching.tex}
+    \input{contents/rf_pcb_design.tex}
+
+    \newpage
+    \bibliographystyle{plain}
+    \bibliography{bibliography.bib}
+
+\end{document}
