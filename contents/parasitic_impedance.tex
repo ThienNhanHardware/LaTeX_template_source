@@ -2,7 +2,7 @@
 
 \section{Khái quát về Parasitic Impedance}
 
-\hspace{13pt} Parasitic Impedance (trở kháng ký sinh) là trở kháng không mong muốn, bao gồm điện dung, điện cảm và điện trở phát sinh xuất hiện trong các mạch điện tử, đặc biệt là trong các thiết kế mạch in PCB. Trở kháng này không được thiết kế chủ đích mà phát sinh tự nhiên từ các đặc tính vật lý của vật liệu, đường mạch và linh kiện trong quá trình thiết kế và sản xuất.
+Parasitic Impedance (trở kháng ký sinh) là trở kháng không mong muốn, bao gồm điện dung, điện cảm và điện trở phát sinh xuất hiện trong các mạch điện tử, đặc biệt là trong các thiết kế mạch in PCB. Trở kháng này không được thiết kế chủ đích mà phát sinh tự nhiên từ các đặc tính vật lý của vật liệu, đường mạch và linh kiện trong quá trình thiết kế và sản xuất.
 
 Ở tần số cao, Parasitic Impedance trở thành yếu tố quan trọng tác động đến hiệu suất hệ thống. Các thành phần ký sinh trong mạch in, linh kiện và kết nối có thể gây suy hao tín hiệu, phản xạ không mong muốn, nhiễu xuyên âm và làm giảm đáng kể hiệu suất tổng thể của mạch RF.
 
@@ -17,7 +17,7 @@ Các thành phần gây ra trở kháng ký sinh bao gồm:
 
 \subsection{Tối ưu Thiết Kế PCB}
 
-\hspace{13pt} Thiết kế PCB đóng vai trò quan trọng trong việc kiểm soát parasitic impedance. Một số nguyên tắc quan trọng cần tuân thủ gồm:
+Thiết kế PCB đóng vai trò quan trọng trong việc kiểm soát parasitic impedance. Một số nguyên tắc quan trọng cần tuân thủ gồm:
 \begin{itemize}
     \item Giữ đường mạch ngắn và tránh stub: Các đường dẫn tín hiệu càng dài thì ký sinh cảm và điện dung càng lớn, ảnh hưởng đến hiệu suất truyền dẫn. Việc loại bỏ các stub giúp tránh các phản xạ không mong muốn.
     \item Duy trì trở kháng (Impedance Matching): Đối với hệ thống RF, việc duy trì trở kháng đặc trưng của đường truyền là rất quan trọng để tránh mất mát và phản xạ tín hiệu. Điều này có thể đạt được bằng cách sử dụng cấu trúc microstrip hoặc stripline và tính toán trở kháng đường mạch phù hợp.
@@ -26,7 +26,7 @@ Các thành phần gây ra trở kháng ký sinh bao gồm:
 
 \subsection{Lựa chọn linh kiện phù hợp}
 
-\hspace{13pt} Các linh kiện sử dụng trong thiết kế RF cũng cần được lựa chọn cẩn thận để giảm thiểu parasitic impedance:
+Các linh kiện sử dụng trong thiết kế RF cũng cần được lựa chọn cẩn thận để giảm thiểu parasitic impedance:
 \begin{itemize}
     \item Dùng linh kiện RF có đặc tính tần số cao: Khi làm việc với tần số cao, cần sử dụng các linh kiện có thông số điện cảm ký sinh thấp (Low ESL - Equivalent Series Inductance) và điện trở nối tiếp thấp (Low ESR - Equivalent Series Resistance) để tránh suy hao tín hiệu.
     \item Chọn package linh kiện phù hợp: Các linh kiện có kích thước nhỏ hơn thường có parasitic inductance thấp hơn. Do đó, ưu tiên sử dụng package như 0402, 0201 hoặc linh kiện flip-chip thay vì package through-hole hoặc DIP có tự cảm ký sinh cao hơn.
@@ -34,7 +34,7 @@ Các thành phần gây ra trở kháng ký sinh bao gồm:
 
 \subsection{Kiểm Tra và Mô Phỏng}
 
-\hspace{13pt} Ngay cả khi đã áp dụng các phương pháp tối ưu, việc kiểm tra và mô phỏng vẫn rất quan trọng để xác minh hiệu quả của thiết kế:
+Ngay cả khi đã áp dụng các phương pháp tối ưu, việc kiểm tra và mô phỏng vẫn rất quan trọng để xác minh hiệu quả của thiết kế:
 \begin{itemize}
     \item Sử dụng phần mềm mô phỏng RF: Các phần mềm như ADS (Advanced Design System), HFSS (High-Frequency Structure Simulator) và Ansys giúp phân tích trở kháng, đặc tính truyền dẫn và xác định các vấn đề về parasitic impedance trước khi sản xuất mạch thật.
     \item Đo kiểm bằng Vector Network Analyzer (VNA): Thiết bị này giúp kiểm tra trở kháng, hệ số phản xạ (S11), độ suy hao chèn (S21) và các thông số quan trọng khác để đánh giá hiệu suất thực tế của mạch RF.
