@@ -51,7 +51,7 @@
 
         Sử dụng liên hợp phức và rút gọn phương trình trên:
         \begin{equation}
-            Y = \frac{R}{R^2 + \left(\omega L\right)^2}
+            Y_{in} = \frac{R}{R^2 + \left(\omega L\right)^2}
         \end{equation}
         \begin{equation}
             \omega_0 = \sqrt{\frac{1}{LC}} - \left(\frac{R}{L}\right)^2
@@ -87,7 +87,7 @@
     \section{Antenna impedance matching}
 
     \section{Impedance matching trong mạch RF}
-        không biết cái hình để làm gì nên để tạm\cite{cadence_impedance}
+        không hiểu cái hình này xem kiểu gì nên để tạm\cite{cadence_impedance}
         \begin{figure}[h]
             \centering
             \includegraphics[width=0.5\textwidth]{figures/smith_chart.png}
@@ -105,8 +105,8 @@
         của matching networks, cụ thể là cho phép truyền \textbf{công suất tối đa} từ nguồn đến tải. 
         Nếu matching networks chứa các thành phần tiêu tán năng lượng, nó sẽ tiêu thụ một phần công suất 
         mà chúng ta đang cố gắng cung cấp cho tải. Do đó, matching networks sử dụng \textbf{tụ điện} 
-        và \textbf{cuộn cảm}, chứ không phải điện trở.\cite{allaboutcircuits_matchingNetworks}\par
+        và \textbf{cuộn cảm}, chứ không phải điện trở.\par
 
         Rất khó để thiết kế một matching networks băng thông rộng, do matching networks bao gồm các tụ điện và cuộn cảm.
         Bởi vì trở kháng của cuộn cảm và tụ điện phụ thuộc vào tần số, do đó việc thay đổi tần số của tín hiệu đi qua matching networks 
-        có thể khiến nó kém hiệu quả hơn.\par
+        có thể khiến nó kém hiệu quả hơn.\cite{allaboutcircuits_matchingNetworks}\par
