@@ -29,9 +29,16 @@
 % ==========================
 \usepackage{graphicx}                % Hỗ trợ chèn hình ảnh
 \usepackage{xurl}
-\usepackage[hidelinks, colorlinks=true, urlcolor=blue]{hyperref} % Hỗ trợ liên kết, ẩn khung viền
-\usepackage{subcaption}                                         % Hỗ trợ chú thích con
-\usepackage{longtable}                                          % Hỗ trợ bảng dài
+\usepackage[
+    hidelinks,
+    colorlinks=true,
+    linkcolor=black,   % Màu cho link nội bộ (như mục lục)
+    citecolor=black,   % Màu cho trích dẫn (nếu có)
+    filecolor=black,   % Màu cho file links (ít dùng)
+    urlcolor=blue      % Màu của \url
+]{hyperref}
+\usepackage{subcaption}  % Hỗ trợ chú thích con
+\usepackage{longtable}   % Hỗ trợ bảng dài
 \usepackage{multirow}
 \setlength{\parindent}{0pt}          % Không thụt đầu dòng
 \usepackage{parskip}                 % Thêm khoảng cách giữa các đoạn
