@@ -150,20 +150,16 @@
 % Biến tùy chỉnh
 % ==========================
 \newcommand{\docsName}{Documentation Name}
-\newcommand{\authNameFirst}{Author 1}
-\newcommand{\authNameSecond}{Author 2}
-\newcommand{\authNameThird}{Author 3}
-\newcommand{\authNameFourth}{Author 4}
-\newcommand{\authNameFifth}{Author 5}
+\newcommand{\authName}{
+    \fontsize{20pt}{20pt}\selectfont \textit{Author 1} \\
+    \fontsize{20pt}{20pt}\selectfont \textit{Author 2} \\
+    \fontsize{20pt}{20pt}\selectfont \textit{Author 3} \\
+}
 \newcommand{\cityName}{City}
 \newcommand{\orgName}{Organization}
 
 % Cho phép người dùng thay đổi giá trị các biến
 \newcommand{\setDocsName}[1]{\renewcommand{\docsName}{#1}}
-\newcommand{\setAuthNameFirst}[1]{\renewcommand{\authNameFirst}{#1}}
-\newcommand{\setAuthNameSecond}[1]{\renewcommand{\authNameSecond}{#1}}
-\newcommand{\setAuthNameThird}[1]{\renewcommand{\authNameThird}{#1}}
-\newcommand{\setAuthNameFourth}[1]{\renewcommand{\authNameFourth}{#1}}
-\newcommand{\setAuthNameFifth}[1]{\renewcommand{\authNameFifth}{#1}}
+\newcommand{\setAuthName}[1]{\renewcommand{\authName}{#1}}
 \newcommand{\setCityName}[1]{\renewcommand{\cityName}{#1}}
 \newcommand{\setOrgName}[1]{\renewcommand{\orgName}{#1}}
