@@ -165,3 +165,13 @@
 \newcommand{\setAuthName}[1]{\renewcommand{\authName}{#1}}
 \newcommand{\setCityName}[1]{\renewcommand{\cityName}{#1}}
 \newcommand{\setOrgName}[1]{\renewcommand{\orgName}{#1}}
+
+% ==========================
+% Thiết lập độ sâu của mục lục
+% ==========================
+\setcounter{secnumdepth}{5}    % Đánh số đến 5 cấp
+\setcounter{tocdepth}{3}       % Hiển thị trong mục lục đến 3 cấp
+
+% Định nghĩa lại tên các cấp (tùy chọn)
+\renewcommand{\theparagraph}{\thesubsubsection.\arabic{paragraph}}
+\renewcommand{\thesubparagraph}{\theparagraph.\arabic{subparagraph}}
